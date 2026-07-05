@@ -4,9 +4,9 @@ import shutil
 from pathlib import Path
 
 # --- CONFIGURATION ---
-ORIGINAL_IMAGES_DIR = Path(r"person_model_training\person_data\images") 
-GLOBAL_LABELS_DIR = Path(r"yolo_annotations")
-OUTPUT_PPE_DIR = Path(r"ppe_model_training\ppe_data")
+ORIGINAL_IMAGES_DIR = Path("..\person_model_training\person_data\images") 
+GLOBAL_LABELS_DIR = Path("..\yolo_annotations")
+OUTPUT_PPE_DIR = Path("ppe_data")
 
 # Class mapping definitions
 # Original classes: 0: person, 1: hard-hat, 2: gloves, 3: mask, 4: glasses, 5: boots, 6: vest, 7: ppe-suit, 8: ear-protector, 9: safety-harness

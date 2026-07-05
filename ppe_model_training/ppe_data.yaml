@@ -1,9 +1,10 @@
-path: D:/datasets/ppe_cropped_data
+path: ppe_data
 train: images/train
 val: images/val
 
-nc: 9 # Matches your target class distribution array
-names: 
+# 9 PPE classes (Person removed)
+nc: 9
+names:
   0: hard-hat
   1: gloves
   2: mask
