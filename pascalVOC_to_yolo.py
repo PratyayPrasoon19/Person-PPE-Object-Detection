@@ -61,12 +61,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert PascalVOC XML annotations to YOLO text format.")
     parser.add_argument("input_dir", type=str, help="Path to the directory containing XML files.")
     parser.add_argument("output_dir", type=str, help="Path to save the converted YOLO .txt files.")
-    parser.add_argument("--classes_file", type=str, default="classes.txt", help="Path to classes.txt mapping file.")
     
     args = parser.parse_args()
     
     try:
-        class_list = load_classes(args.classes_file)
+        class_list = load_classes("datasets/classes.txt")
         convert_xml_to_yolo(args.input_dir, args.output_dir, class_list)
         logging.info("Successfully converted all annotations!")
     except Exception as err:

@@ -43,5 +43,5 @@ if __name__ == "__main__":
     split_data(
         image_dir="datasets/images", 
         label_dir="yolo_annotations", 
-        output_root="model_training/person_data"
+        output_root="person_model_training/person_data"
     )
